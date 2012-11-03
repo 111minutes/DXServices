@@ -1,14 +1,14 @@
 //
-//  DXServiceTests.m
-//  DXServiceTests
+//  TestappTests.m
+//  TestappTests
 //
-//  Created by zen on 10/28/12.
+//  Created by zen on 10/30/12.
 //  Copyright (c) 2012 111Minutes. All rights reserved.
 //
 
-#import "DXServiceTests.h"
+#import "TestappTests.h"
 
-@implementation DXServiceTests
+@implementation TestappTests
 
 - (void)setUp
 {
@@ -26,7 +26,7 @@
 
 - (void)testExample
 {
-    STFail(@"Unit tests are not implemented yet in DXServiceTests");
+    STFail(@"Unit tests are not implemented yet in TestappTests");
 }
 
 @end

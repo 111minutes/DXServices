@@ -10,4 +10,8 @@
 
 @interface DXService : NSObject
 
++ (instancetype)shared;
+
+- (id)buildEmitterForIntentClass:(Class)IntentClass constructor:(id(^)(id intent))constructor;
+
 @end

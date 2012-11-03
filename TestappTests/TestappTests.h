@@ -1,13 +1,13 @@
 //
-//  DXServiceTests.h
-//  DXServiceTests
+//  TestappTests.h
+//  TestappTests
 //
-//  Created by zen on 10/28/12.
+//  Created by zen on 10/30/12.
 //  Copyright (c) 2012 111Minutes. All rights reserved.
 //
 
 #import <SenTestingKit/SenTestingKit.h>
 
-@interface DXServiceTests : SenTestCase
+@interface TestappTests : SenTestCase
 
 @end
