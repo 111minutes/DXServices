@@ -7,26 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D6A30CBA1719CB8D4BE6351 /* AsyncTaskServiceProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D6A39519E373CB773470AAA /* AsyncTaskServiceProvider.m */; };
+		1D6A3406BAFB70E982B8B29F /* AsyncTaskService.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D6A37920B1AFC769FCAFAD9 /* AsyncTaskService.m */; };
+		1D6A3AEA975AE964C82E0945 /* AsyncServiceSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D6A3146F5F6F4524C30D8C8 /* AsyncServiceSpec.m */; };
+		1D6A3CE647849AC7769C6896 /* AsyncTaskIntent.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D6A3E9770D101B6BB7516BC /* AsyncTaskIntent.m */; };
 		9B6F621CD7AE4E7BB3F73B53 /* libPods-DXServiceTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D846D8ACB4B54EC5A990EFBF /* libPods-DXServiceTests.a */; };
-		AD29541F1640602100CFA635 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADD1472E163D9388009DF157 /* UIKit.framework */; };
-		AD2954201640602100CFA635 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADD1471D163D9388009DF157 /* Foundation.framework */; };
-		AD2954221640602100CFA635 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD2954211640602100CFA635 /* CoreGraphics.framework */; };
-		AD2954281640602100CFA635 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AD2954261640602100CFA635 /* InfoPlist.strings */; };
-		AD29542A1640602100CFA635 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AD2954291640602100CFA635 /* main.m */; };
-		AD29542E1640602100CFA635 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AD29542D1640602100CFA635 /* AppDelegate.m */; };
-		AD2954301640602100CFA635 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = AD29542F1640602100CFA635 /* Default.png */; };
-		AD2954321640602100CFA635 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AD2954311640602100CFA635 /* Default@2x.png */; };
-		AD2954341640602100CFA635 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AD2954331640602100CFA635 /* Default-568h@2x.png */; };
-		AD2954511640605500CFA635 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD2954501640605500CFA635 /* RootViewController.m */; };
-		AD2954521640620900CFA635 /* libDXService.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADD1471A163D9388009DF157 /* libDXService.a */; };
-		AD2954561640623400CFA635 /* DXService.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD14724163D9388009DF157 /* DXService.m */; };
-		AD2954571640623400CFA635 /* DXServiceIntent.m in Sources */ = {isa = PBXBuildFile; fileRef = AD978534163E6D4800360CFB /* DXServiceIntent.m */; };
-		AD2954581640623400CFA635 /* DXServiceIntentObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = AD978538163E6D7600360CFB /* DXServiceIntentObserver.m */; };
 		AD77742A16407419007883AB /* DXServiceIntentSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = AD77742916407419007883AB /* DXServiceIntentSpec.m */; };
-		AD77742D16407846007883AB /* DXServiceIntentEmitterSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = AD77742C16407846007883AB /* DXServiceIntentEmitterSpec.m */; };
+		AD77742D16407846007883AB /* DXServiceIntentProxySpec.m in Sources */ = {isa = PBXBuildFile; fileRef = AD77742C16407846007883AB /* DXServiceIntentProxySpec.m */; };
 		AD7A8C3C163D94EF005A42F6 /* DXServiceSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = AD7A8C3B163D94EF005A42F6 /* DXServiceSpec.m */; };
 		AD978535163E6D4800360CFB /* DXServiceIntent.m in Sources */ = {isa = PBXBuildFile; fileRef = AD978534163E6D4800360CFB /* DXServiceIntent.m */; };
-		AD978539163E6D7600360CFB /* DXServiceIntentObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = AD978538163E6D7600360CFB /* DXServiceIntentObserver.m */; };
+		AD978539163E6D7600360CFB /* DXServiceIntentProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = AD978538163E6D7600360CFB /* DXServiceIntentProxy.m */; };
 		ADD1471E163D9388009DF157 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADD1471D163D9388009DF157 /* Foundation.framework */; };
 		ADD14723163D9388009DF157 /* DXService.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ADD14722163D9388009DF157 /* DXService.h */; };
 		ADD14725163D9388009DF157 /* DXService.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD14724163D9388009DF157 /* DXService.m */; };
@@ -38,13 +28,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		AD2954541640622100CFA635 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = ADD14711163D9388009DF157 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = ADD14719163D9388009DF157;
-			remoteInfo = DXService;
-		};
 		ADD14731163D9388009DF157 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = ADD14711163D9388009DF157 /* Project object */;
@@ -69,31 +52,22 @@
 
 /* Begin PBXFileReference section */
 		010DEDCBB9E24555A5F8D015 /* Pods-DXServiceTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DXServiceTests.xcconfig"; path = "Pods/Pods-DXServiceTests.xcconfig"; sourceTree = SOURCE_ROOT; };
-		AD29541D1640602100CFA635 /* Testapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Testapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D6A3146F5F6F4524C30D8C8 /* AsyncServiceSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncServiceSpec.m; sourceTree = "<group>"; };
+		1D6A331822F0C5D7A0420D3D /* AsyncTaskServiceProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncTaskServiceProvider.h; sourceTree = "<group>"; };
+		1D6A33811AB219F0E93FF263 /* AsyncTaskService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncTaskService.h; sourceTree = "<group>"; };
+		1D6A37920B1AFC769FCAFAD9 /* AsyncTaskService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncTaskService.m; sourceTree = "<group>"; };
+		1D6A39519E373CB773470AAA /* AsyncTaskServiceProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncTaskServiceProvider.m; sourceTree = "<group>"; };
+		1D6A3C8A30506C15C7E960E2 /* AsyncTaskIntent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncTaskIntent.h; sourceTree = "<group>"; };
+		1D6A3E9770D101B6BB7516BC /* AsyncTaskIntent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncTaskIntent.m; sourceTree = "<group>"; };
 		AD2954211640602100CFA635 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		AD2954251640602100CFA635 /* Testapp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Testapp-Info.plist"; sourceTree = "<group>"; };
-		AD2954271640602100CFA635 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		AD2954291640602100CFA635 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		AD29542B1640602100CFA635 /* Testapp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Testapp-Prefix.pch"; sourceTree = "<group>"; };
-		AD29542C1640602100CFA635 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		AD29542D1640602100CFA635 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		AD29542F1640602100CFA635 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		AD2954311640602100CFA635 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		AD2954331640602100CFA635 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		AD2954421640602100CFA635 /* TestappTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TestappTests-Info.plist"; sourceTree = "<group>"; };
-		AD2954441640602100CFA635 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		AD2954461640602100CFA635 /* TestappTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestappTests.h; sourceTree = "<group>"; };
-		AD2954471640602100CFA635 /* TestappTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestappTests.m; sourceTree = "<group>"; };
-		AD29544F1640605500CFA635 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
-		AD2954501640605500CFA635 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		AD29545A1640639600CFA635 /* DXServiceProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXServiceProvider.h; sourceTree = "<group>"; };
 		AD77742916407419007883AB /* DXServiceIntentSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXServiceIntentSpec.m; sourceTree = "<group>"; };
-		AD77742C16407846007883AB /* DXServiceIntentEmitterSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXServiceIntentEmitterSpec.m; sourceTree = "<group>"; };
+		AD77742C16407846007883AB /* DXServiceIntentProxySpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXServiceIntentProxySpec.m; sourceTree = "<group>"; };
 		AD7A8C3B163D94EF005A42F6 /* DXServiceSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXServiceSpec.m; sourceTree = "<group>"; };
 		AD978533163E6D4800360CFB /* DXServiceIntent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXServiceIntent.h; sourceTree = "<group>"; };
 		AD978534163E6D4800360CFB /* DXServiceIntent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXServiceIntent.m; sourceTree = "<group>"; };
-		AD978537163E6D7600360CFB /* DXServiceIntentObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXServiceIntentObserver.h; sourceTree = "<group>"; };
-		AD978538163E6D7600360CFB /* DXServiceIntentObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXServiceIntentObserver.m; sourceTree = "<group>"; };
+		AD978537163E6D7600360CFB /* DXServiceIntentProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXServiceIntentProxy.h; sourceTree = "<group>"; };
+		AD978538163E6D7600360CFB /* DXServiceIntentProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXServiceIntentProxy.m; sourceTree = "<group>"; };
 		ADD1471A163D9388009DF157 /* libDXService.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDXService.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADD1471D163D9388009DF157 /* Foundation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		ADD14721163D9388009DF157 /* DXService-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DXService-Prefix.pch"; sourceTree = "<group>"; };
@@ -108,17 +82,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		AD29541A1640602100CFA635 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AD2954521640620900CFA635 /* libDXService.a in Frameworks */,
-				AD29541F1640602100CFA635 /* UIKit.framework in Frameworks */,
-				AD2954201640602100CFA635 /* Foundation.framework in Frameworks */,
-				AD2954221640602100CFA635 /* CoreGraphics.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		ADD14717163D9388009DF157 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -142,49 +105,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		AD2954231640602100CFA635 /* Testapp */ = {
+		1D6A358D12BABA91609F8DF7 /* ExampleClasses */ = {
 			isa = PBXGroup;
 			children = (
-				AD29542C1640602100CFA635 /* AppDelegate.h */,
-				AD29542D1640602100CFA635 /* AppDelegate.m */,
-				AD2954241640602100CFA635 /* Supporting Files */,
-				AD29544F1640605500CFA635 /* RootViewController.h */,
-				AD2954501640605500CFA635 /* RootViewController.m */,
+				1D6A37920B1AFC769FCAFAD9 /* AsyncTaskService.m */,
+				1D6A33811AB219F0E93FF263 /* AsyncTaskService.h */,
+				1D6A3E9770D101B6BB7516BC /* AsyncTaskIntent.m */,
+				1D6A3C8A30506C15C7E960E2 /* AsyncTaskIntent.h */,
+				1D6A39519E373CB773470AAA /* AsyncTaskServiceProvider.m */,
+				1D6A331822F0C5D7A0420D3D /* AsyncTaskServiceProvider.h */,
+				1D6A3146F5F6F4524C30D8C8 /* AsyncServiceSpec.m */,
 			);
-			path = Testapp;
+			path = ExampleClasses;
 			sourceTree = "<group>";
 		};
-		AD2954241640602100CFA635 /* Supporting Files */ = {
+		1D6A3EF602627B2CC9CC1E32 /* ExampleServiceSpecs */ = {
 			isa = PBXGroup;
 			children = (
-				AD2954251640602100CFA635 /* Testapp-Info.plist */,
-				AD2954261640602100CFA635 /* InfoPlist.strings */,
-				AD2954291640602100CFA635 /* main.m */,
-				AD29542B1640602100CFA635 /* Testapp-Prefix.pch */,
-				AD29542F1640602100CFA635 /* Default.png */,
-				AD2954311640602100CFA635 /* Default@2x.png */,
-				AD2954331640602100CFA635 /* Default-568h@2x.png */,
 			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		AD2954401640602100CFA635 /* TestappTests */ = {
-			isa = PBXGroup;
-			children = (
-				AD2954461640602100CFA635 /* TestappTests.h */,
-				AD2954471640602100CFA635 /* TestappTests.m */,
-				AD2954411640602100CFA635 /* Supporting Files */,
-			);
-			path = TestappTests;
-			sourceTree = "<group>";
-		};
-		AD2954411640602100CFA635 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				AD2954421640602100CFA635 /* TestappTests-Info.plist */,
-				AD2954431640602100CFA635 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
+			path = ExampleServiceSpecs;
 			sourceTree = "<group>";
 		};
 		ADD1470F163D9388009DF157 = {
@@ -192,8 +131,6 @@
 			children = (
 				ADD1471F163D9388009DF157 /* DXService */,
 				ADD14734163D9388009DF157 /* DXServiceTests */,
-				AD2954231640602100CFA635 /* Testapp */,
-				AD2954401640602100CFA635 /* TestappTests */,
 				ADD1471C163D9388009DF157 /* Frameworks */,
 				ADD1471B163D9388009DF157 /* Products */,
 				010DEDCBB9E24555A5F8D015 /* Pods-DXServiceTests.xcconfig */,
@@ -205,7 +142,6 @@
 			children = (
 				ADD1471A163D9388009DF157 /* libDXService.a */,
 				ADD1472B163D9388009DF157 /* DXServiceTests.octest */,
-				AD29541D1640602100CFA635 /* Testapp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -229,8 +165,8 @@
 				ADD14724163D9388009DF157 /* DXService.m */,
 				AD978533163E6D4800360CFB /* DXServiceIntent.h */,
 				AD978534163E6D4800360CFB /* DXServiceIntent.m */,
-				AD978537163E6D7600360CFB /* DXServiceIntentObserver.h */,
-				AD978538163E6D7600360CFB /* DXServiceIntentObserver.m */,
+				AD978537163E6D7600360CFB /* DXServiceIntentProxy.h */,
+				AD978538163E6D7600360CFB /* DXServiceIntentProxy.m */,
 				AD29545A1640639600CFA635 /* DXServiceProvider.h */,
 				ADD14720163D9388009DF157 /* Supporting Files */,
 			);
@@ -251,7 +187,9 @@
 				ADD14735163D9388009DF157 /* Supporting Files */,
 				AD7A8C3B163D94EF005A42F6 /* DXServiceSpec.m */,
 				AD77742916407419007883AB /* DXServiceIntentSpec.m */,
-				AD77742C16407846007883AB /* DXServiceIntentEmitterSpec.m */,
+				AD77742C16407846007883AB /* DXServiceIntentProxySpec.m */,
+				1D6A358D12BABA91609F8DF7 /* ExampleClasses */,
+				1D6A3EF602627B2CC9CC1E32 /* ExampleServiceSpecs */,
 			);
 			path = DXServiceTests;
 			sourceTree = "<group>";
@@ -268,24 +206,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AD29541C1640602100CFA635 /* Testapp */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = AD2954491640602100CFA635 /* Build configuration list for PBXNativeTarget "Testapp" */;
-			buildPhases = (
-				AD2954191640602100CFA635 /* Sources */,
-				AD29541A1640602100CFA635 /* Frameworks */,
-				AD29541B1640602100CFA635 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				AD2954551640622100CFA635 /* PBXTargetDependency */,
-			);
-			name = Testapp;
-			productName = Testapp;
-			productReference = AD29541D1640602100CFA635 /* Testapp.app */;
-			productType = "com.apple.product-type.application";
-		};
 		ADD14719163D9388009DF157 /* DXService */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = ADD1473F163D9388009DF157 /* Build configuration list for PBXNativeTarget "DXService" */;
@@ -346,23 +266,11 @@
 			targets = (
 				ADD14719163D9388009DF157 /* DXService */,
 				ADD1472A163D9388009DF157 /* DXServiceTests */,
-				AD29541C1640602100CFA635 /* Testapp */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		AD29541B1640602100CFA635 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AD2954281640602100CFA635 /* InfoPlist.strings in Resources */,
-				AD2954301640602100CFA635 /* Default.png in Resources */,
-				AD2954321640602100CFA635 /* Default@2x.png in Resources */,
-				AD2954341640602100CFA635 /* Default-568h@2x.png in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		ADD14728163D9388009DF157 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -404,26 +312,13 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		AD2954191640602100CFA635 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AD29542A1640602100CFA635 /* main.m in Sources */,
-				AD29542E1640602100CFA635 /* AppDelegate.m in Sources */,
-				AD2954511640605500CFA635 /* RootViewController.m in Sources */,
-				AD2954561640623400CFA635 /* DXService.m in Sources */,
-				AD2954571640623400CFA635 /* DXServiceIntent.m in Sources */,
-				AD2954581640623400CFA635 /* DXServiceIntentObserver.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		ADD14716163D9388009DF157 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				ADD14725163D9388009DF157 /* DXService.m in Sources */,
 				AD978535163E6D4800360CFB /* DXServiceIntent.m in Sources */,
-				AD978539163E6D7600360CFB /* DXServiceIntentObserver.m in Sources */,
+				AD978539163E6D7600360CFB /* DXServiceIntentProxy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,18 +328,17 @@
 			files = (
 				AD7A8C3C163D94EF005A42F6 /* DXServiceSpec.m in Sources */,
 				AD77742A16407419007883AB /* DXServiceIntentSpec.m in Sources */,
-				AD77742D16407846007883AB /* DXServiceIntentEmitterSpec.m in Sources */,
+				AD77742D16407846007883AB /* DXServiceIntentProxySpec.m in Sources */,
+				1D6A3406BAFB70E982B8B29F /* AsyncTaskService.m in Sources */,
+				1D6A3CE647849AC7769C6896 /* AsyncTaskIntent.m in Sources */,
+				1D6A30CBA1719CB8D4BE6351 /* AsyncTaskServiceProvider.m in Sources */,
+				1D6A3AEA975AE964C82E0945 /* AsyncServiceSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		AD2954551640622100CFA635 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = ADD14719163D9388009DF157 /* DXService */;
-			targetProxy = AD2954541640622100CFA635 /* PBXContainerItemProxy */;
-		};
 		ADD14732163D9388009DF157 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = ADD14719163D9388009DF157 /* DXService */;
@@ -453,22 +347,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		AD2954261640602100CFA635 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AD2954271640602100CFA635 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		AD2954431640602100CFA635 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AD2954441640602100CFA635 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
 		ADD14737163D9388009DF157 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -480,39 +358,6 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		AD29544A1640602100CFA635 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Testapp/Testapp-Prefix.pch";
-				INFOPLIST_FILE = "Testapp/Testapp-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Debug;
-		};
-		AD29544B1640602100CFA635 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Testapp/Testapp-Prefix.pch";
-				INFOPLIST_FILE = "Testapp/Testapp-Info.plist";
-				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
 		ADD1473D163D9388009DF157 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -619,15 +464,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AD2954491640602100CFA635 /* Build configuration list for PBXNativeTarget "Testapp" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AD29544A1640602100CFA635 /* Debug */,
-				AD29544B1640602100CFA635 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		ADD14714163D9388009DF157 /* Build configuration list for PBXProject "DXService" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -12,6 +12,10 @@
 
 @protocol DXServiceProvider <NSObject>
 
-- (void)performIntent:(DXServiceIntent*)intent;
+- (void)performIntent:(DXServiceIntent *)intent;
+
+@optional
+
+- (void)cancelIntent:(DXServiceIntent *)intent;
 
 @end

@@ -6,14 +6,29 @@
 //  Copyright 2012 111Minutes. All rights reserved.
 //
 
-#import <Kiwi/Kiwi.h>
+
+#import "Kiwi.h"
 #import "DXService.h"
+#import "DXServiceProvider.h"
+#import "DXServiceIntent.h"
+#import "DXServiceProvider.h"
+
 
 SPEC_BEGIN(DXServiceSpec)
 
-describe(@"Basic API", ^{
-    
-});
+    describe(@"Provider cache", ^{
+        it(@"Should cache service provider for intent class", ^{
+            DXService *service = [DXService new];
+
+            NSString *providerMock = @"providerMock";
+
+            [[service stubAndReturn:providerMock] serviceProviderForIntentClass:[NSString class]];
+
+            [[(id)[service buildServiceProviderForIntentClass:[NSString class]] should] equal:providerMock];
+
+            [[(id)[service buildServiceProviderForIntentClass:[NSString class]] should] equal:providerMock];
+        });
+    });
 
 SPEC_END
 

@@ -1,0 +1,14 @@
+.idea
+.idea/DXService.iml
+.idea/codeStyleSettings.xml
+.idea/dictionaries
+.idea/encodings.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/scopes
+.idea/vcs.xml
+.idea/workspace.xml
+.idea/xcode.xml
+*.xcuserdatad
+Pods
+Podfile.lock

@@ -7,7 +7,13 @@
 //
 
 #import "DXService.h"
-#import "DXServiceIntentObserver.h"
+#import "DXServiceIntentProxy.h"
+
+@interface DXService ()
+
+@property (nonatomic, strong) NSMutableDictionary *providersCache;
+
+@end
 
 @implementation DXService
 
@@ -16,20 +22,40 @@
     return [[self class] new];
 }
 
-- (id<DXServiceProvider>)serviceProviderForIntentClass:(Class)IntentClass
+- (id)init
+{
+    self = [super init];
+    if (self) {
+        self.providersCache = [NSMutableDictionary new];
+    }
+    return self;
+}
+
+- (id <DXServiceProvider>)serviceProviderForIntentClass:(Class)IntentClass
 {
     return nil;
 }
 
-- (id)buildEmitterForIntentClass:(Class)IntentClass constructor:(id(^)(id intent))constructor
+- (id <DXServiceProvider>)buildServiceProviderForIntentClass:(Class)IntentClass
 {
-    id intent = [[IntentClass alloc] initWithServiceProvider:[self serviceProviderForIntentClass:IntentClass]];
-    
-    if (constructor) {
-        constructor(intent); 
+    id<DXServiceProvider> provider = self.providersCache[NSStringFromClass(IntentClass)];
+    if (!provider) {
+        provider = [self serviceProviderForIntentClass:IntentClass];
+        assert(provider);
+        self.providersCache[NSStringFromClass(IntentClass)] = provider;
     }
-    
-    return [DXServiceIntentObserver observerWithIntent:intent];
+    return provider;
+}
+
+- (id) buildProxyForIntentClass:(Class)IntentClass constructor:(void(^)(id intent))constructor
+{
+    id intent = [[IntentClass alloc] initWithServiceProvider:[self buildServiceProviderForIntentClass:IntentClass]];
+
+    if (constructor) {
+        constructor(intent);
+    }
+
+    return [DXServiceIntentProxy proxyWithIntent:intent];
 }
 
 @end

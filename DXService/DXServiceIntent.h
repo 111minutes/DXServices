@@ -9,31 +9,36 @@
 #import <Foundation/Foundation.h>
 #import "DXServiceProvider.h"
 
-@class DXServiceIntentObserver;
+@class DXServiceIntentProxy;
 
 extern const struct DXServiceIntentConstants
 {
     __unsafe_unretained NSString *beginEvent;
     __unsafe_unretained NSString *finishEvent;
     __unsafe_unretained NSString *commitResultsEvent;
-
+    __unsafe_unretained NSString *finishWithErrorEvent;
 } DXServiceIntentConstants;
 
 @interface DXServiceIntent : NSObject
 
-- (id)initWithServiceProvider:(id<DXServiceProvider>)provider;
+- (id)initWithServiceProvider:(id <DXServiceProvider>)provider;
+
 - (void)perform;
+
 - (void)cancel;
 
-- (void)begin;
 - (void)commitResults:(id)results;
+
 - (void)finishWithResult:(id)result;
+
 - (void)finish;
 
-- (void)addObserver:(DXServiceIntentObserver*)emitter;
-- (void)removeObserver:(DXServiceIntentObserver*)emitter;
-- (NSArray*)allObservers;
+- (void)addProxy:(DXServiceIntentProxy *)emitter;
 
-- (void)emitEventWithName:(NSString*)eventName value:(id)eventValue;
+- (void)removeProxy:(DXServiceIntentProxy *)emitter;
+
+- (NSArray *)allProxies;
+
+- (void)emitEventWithName:(NSString *)eventName value:(id)eventValue;
 
 @end

@@ -8,10 +8,15 @@
 
 #import <Foundation/Foundation.h>
 
+@protocol DXServiceProvider;
+
 @interface DXService : NSObject
 
 + (instancetype)shared;
 
-- (id)buildEmitterForIntentClass:(Class)IntentClass constructor:(id(^)(id intent))constructor;
+- (id <DXServiceProvider>)serviceProviderForIntentClass:(Class)IntentClass;
+- (id <DXServiceProvider>)buildServiceProviderForIntentClass:(Class)IntentClass;
+
+- (id)buildProxyForIntentClass:(Class)IntentClass constructor:(void(^)(id intent))constructor;
 
 @end
