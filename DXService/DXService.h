@@ -12,8 +12,6 @@
 
 @interface DXService : NSObject
 
-+ (instancetype)shared;
-
 - (id <DXServiceProvider>)serviceProviderForIntentClass:(Class)IntentClass;
 - (id <DXServiceProvider>)buildServiceProviderForIntentClass:(Class)IntentClass;
 

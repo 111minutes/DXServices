@@ -17,11 +17,6 @@
 
 @implementation DXService
 
-+ (instancetype)shared
-{
-    return [[self class] new];
-}
-
 - (id)init
 {
     self = [super init];
@@ -41,7 +36,9 @@
     id<DXServiceProvider> provider = self.providersCache[NSStringFromClass(IntentClass)];
     if (!provider) {
         provider = [self serviceProviderForIntentClass:IntentClass];
-        assert(provider);
+        
+        NSParameterAssert(provider);
+        
         self.providersCache[NSStringFromClass(IntentClass)] = provider;
     }
     return provider;

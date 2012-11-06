@@ -24,6 +24,8 @@
 
 - (id)initWithIntent:(DXServiceIntent *)anIntent
 {
+    NSParameterAssert(anIntent);
+    
     self = [super init];
     if (self) {
         self.intent = anIntent;
@@ -45,9 +47,10 @@
     self.intent = nil;
 }
 
-
 - (void)absorbEventWithName:(NSString *)eventName value:(id)eventValue
 {
+    NSParameterAssert(eventName);
+
     NSMutableArray *listenersForEvent = self.listeners[eventName];
     [listenersForEvent enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
         void(^block)(id) = obj;
@@ -57,6 +60,9 @@
 
 - (void)on:(NSString *)eventName notify:(void (^)(id))listener
 {
+    NSParameterAssert(listener);
+    NSParameterAssert(eventName);
+    
     NSMutableArray *listenersForEvent = self.listeners[eventName];
     if (!listenersForEvent) {
         listenersForEvent = [NSMutableArray new];

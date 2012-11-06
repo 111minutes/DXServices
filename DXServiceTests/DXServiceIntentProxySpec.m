@@ -31,6 +31,13 @@ SPEC_BEGIN(DXServiceIntentProxySpec)
 
                 [proxy cancel];
             });
+            
+            it(@"Should throw exception in case of nil intent in init", ^{
+                [[theBlock(^{
+                    [DXServiceIntentProxy proxyWithIntent:nil];
+                }) should] raiseWithName:NSInternalInconsistencyException];
+            });
+            
         });
 
         describe(@"Subscribing to intent", ^{
@@ -49,6 +56,25 @@ SPEC_BEGIN(DXServiceIntentProxySpec)
                 id intent = [DXServiceIntent nullMock];
                 _proxy = [DXServiceIntentProxy proxyWithIntent:intent];
             });
+            
+            it(@"Should throw exception in case of nil callback", ^{
+                [[theBlock(^{
+                    [_proxy on:@"EventName" notify:nil];
+                }) should] raiseWithName:NSInternalInconsistencyException];
+            });
+            
+            it(@"Should throw exception in case of nil eventName", ^{
+                [[theBlock(^{
+                    [_proxy on:nil notify:^(id obj){}];
+                }) should] raiseWithName:NSInternalInconsistencyException];
+            });
+            
+            it(@"Should throw exception in case of nil eventName in absorb method", ^{
+                [[theBlock(^{
+                    [_proxy absorbEventWithName:nil value:nil];
+                }) should] raiseWithName:NSInternalInconsistencyException];
+            });
+            
             
             it(@"Should notify all listeners about event", ^{
                 __block NSString *receivedData1;
