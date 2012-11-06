@@ -7,10 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <DXFoundation/DXSingleton.h>
 
 @protocol DXServiceProvider;
 
-@interface DXService : NSObject
+@interface DXService : NSObject <DXSingleton>
 
 - (id <DXServiceProvider>)serviceProviderForIntentClass:(Class)IntentClass;
 - (id <DXServiceProvider>)buildServiceProviderForIntentClass:(Class)IntentClass;
