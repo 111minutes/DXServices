@@ -1,0 +1,11 @@
+DXServices is a unified services framework.
+Main goal is to provide infrastructure for creating any type of application services.
+Like HTTP services, Social network integration, database interaction.
+All these features can be concluded into services with common API rules.
+
+The main components are:
+
+- DXService
+- DXServiceProvider
+- DXServiceIntent
+- DXServiceIntentProxy

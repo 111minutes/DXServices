@@ -7,6 +7,7 @@
 //
 
 #import "DXServiceIntentProxy.h"
+#import "DXServiceIntentProxyCallbackContext.h"
 
 @interface DXServiceIntentProxy ()
 
@@ -52,37 +53,41 @@
     NSParameterAssert(eventName);
 
     NSMutableArray *listenersForEvent = self.listeners[eventName];
-    [listenersForEvent enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
-        void(^block)(id) = obj;
-        block(eventValue);
+    [listenersForEvent enumerateObjectsUsingBlock:^(DXServiceIntentProxyCallbackContext *context, NSUInteger idx, BOOL *stop) {
+        [context invokeWithResult:eventValue];
     }];
 }
 
 - (void)on:(NSString *)eventName notify:(void (^)(id))listener
 {
+    [self on:eventName notify:listener onQueue:nil];
+}
+
+- (void)on:(NSString *)eventName notify:(void (^)(id))listener onQueue:(dispatch_queue_t)anQueue
+{
     NSParameterAssert(listener);
     NSParameterAssert(eventName);
-    
+
     NSMutableArray *listenersForEvent = self.listeners[eventName];
     if (!listenersForEvent) {
         listenersForEvent = [NSMutableArray new];
         self.listeners[eventName] = listenersForEvent;
     }
 
-    [listenersForEvent addObject:[listener copy]];
+    [listenersForEvent addObject:[DXServiceIntentProxyCallbackContext contextWithCallback:listener onQueue:anQueue]];
 }
 
-- (void)onSuccess:(void (^)(id))callback
+- (void)onSuccess:(DXServiceIntentProxyCallBack)callback
 {
     [self on:DXServiceIntentConstants.finishEvent notify:callback];
 }
 
-- (void)onError:(void (^)(id))callback
+- (void)onError:(DXServiceIntentProxyCallBack)callback
 {
     [self on:DXServiceIntentConstants.finishWithErrorEvent notify:callback];
 }
 
-- (void)onCommitResult:(void (^)(id))callback
+- (void)onCommitResult:(DXServiceIntentProxyCallBack)callback
 {
     [self on:DXServiceIntentConstants.commitResultsEvent notify:callback];
 }

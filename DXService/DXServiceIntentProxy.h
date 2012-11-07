@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 #import "DXServiceIntent.h"
 
+typedef void (^DXServiceIntentProxyCallBack)(id data);
+
 @interface DXServiceIntentProxy : NSObject
 
 + (DXServiceIntentProxy *)proxyWithIntent:(DXServiceIntent *)intent;
@@ -20,12 +22,13 @@
 
 - (void)absorbEventWithName:(NSString *)eventName value:(id)eventValue;
 
-- (void)on:(NSString *)eventName notify:(void (^)(id))listener;
+- (void)on:(NSString *)eventName notify:(DXServiceIntentProxyCallBack)listener;
+- (void)on:(NSString *)eventName notify:(void (^)(id))listener onQueue:(dispatch_queue_t)anQueue;
 
-- (void)onSuccess:(void (^)(id))callback;
+- (void)onSuccess:(DXServiceIntentProxyCallBack)callback;
 
-- (void)onError:(void (^)(id))callback;
+- (void)onError:(DXServiceIntentProxyCallBack)callback;
 
-- (void)onCommitResult:(void (^)(id))callback;
+- (void)onCommitResult:(DXServiceIntentProxyCallBack)callback;
 
 @end

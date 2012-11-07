@@ -47,7 +47,7 @@
 - (id) buildProxyForIntentClass:(Class)IntentClass constructor:(void(^)(id intent))constructor
 {
     id intent = [[IntentClass alloc] initWithServiceProvider:[self buildServiceProviderForIntentClass:IntentClass]];
-
+    
     if (constructor) {
         constructor(intent);
     }
