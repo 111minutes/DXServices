@@ -18,6 +18,10 @@
 SPEC_BEGIN(DXServiceSpec)
 
     describe(@"Provider cache", ^{
+        afterEach(^{
+            [[DXServiceIntentProviderMapping shared] clearMapping];
+        });
+        
         it(@"Should cache service provider for intent class", ^{
             DXService *service = [DXService new];
             
@@ -26,6 +30,14 @@ SPEC_BEGIN(DXServiceSpec)
             id serviceProvider = [service buildServiceProviderForIntentClass:[NSString class]];
             
             [[(id)[service buildServiceProviderForIntentClass:[NSString class]] should] equal:serviceProvider];
+        });
+        
+        it(@"Should throw an exception if service provider for intent is not found", ^{
+            DXService *service = [DXService new];
+            
+            [[theBlock(^{
+                [service buildServiceProviderForIntentClass:[NSString class]];
+            }) should] raiseWithName:NSInternalInconsistencyException];
         });
     });
 

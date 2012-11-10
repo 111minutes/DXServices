@@ -14,5 +14,6 @@
 
 - (void)addMappingFromIntentClass:(Class)intentClass toProviderClass:(Class)providerClass;
 - (Class)serviceProviderClassForIntentClass:(Class)intentClass;
+- (void)clearMapping;
 
 @end

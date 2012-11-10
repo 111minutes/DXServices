@@ -33,6 +33,8 @@
     if (!provider) {
         Class providerClass = [[DXServiceIntentProviderMapping shared] serviceProviderClassForIntentClass:IntentClass];
         
+        NSParameterAssert(providerClass);
+        
         provider = [providerClass new];
         
         NSParameterAssert(provider);

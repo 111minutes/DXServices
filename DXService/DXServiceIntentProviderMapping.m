@@ -35,4 +35,9 @@
     return [self.mapping objectForKey:NSStringFromClass(intentClass)];
 }
 
+- (void)clearMapping
+{
+    [self.mapping removeAllObjects];
+}
+
 @end
