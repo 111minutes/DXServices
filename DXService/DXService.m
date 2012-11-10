@@ -8,6 +8,7 @@
 
 #import "DXService.h"
 #import "DXServiceIntentProxy.h"
+#import "DXServiceIntentProviderMapping.h"
 
 @interface DXService ()
 
@@ -26,16 +27,13 @@
     return self;
 }
 
-- (id <DXServiceProvider>)serviceProviderForIntentClass:(Class)IntentClass
-{
-    return nil;
-}
-
 - (id <DXServiceProvider>)buildServiceProviderForIntentClass:(Class)IntentClass
 {
     id<DXServiceProvider> provider = self.providersCache[NSStringFromClass(IntentClass)];
     if (!provider) {
-        provider = [self serviceProviderForIntentClass:IntentClass];
+        Class providerClass = [[DXServiceIntentProviderMapping shared] serviceProviderClassForIntentClass:IntentClass];
+        
+        provider = [providerClass new];
         
         NSParameterAssert(provider);
         

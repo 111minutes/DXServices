@@ -9,6 +9,7 @@
 #import "AsyncTaskServiceProvider.h"
 #import "DXServiceIntent.h"
 #import "AsyncTaskIntent.h"
+#import "DXServiceIntentProviderMapping.h"
 
 @interface AsyncTaskServiceProvider ()
 
@@ -19,6 +20,11 @@
 @implementation AsyncTaskServiceProvider
 {
 
+}
+
++ (void)load
+{
+    [[DXServiceIntentProviderMapping shared] addMappingFromIntentClass:[AsyncTaskIntent class] toProviderClass:self];
 }
 
 - (id)init

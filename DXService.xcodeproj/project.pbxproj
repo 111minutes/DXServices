@@ -19,6 +19,8 @@
 		AD7A8C3C163D94EF005A42F6 /* DXServiceSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = AD7A8C3B163D94EF005A42F6 /* DXServiceSpec.m */; };
 		AD978535163E6D4800360CFB /* DXServiceIntent.m in Sources */ = {isa = PBXBuildFile; fileRef = AD978534163E6D4800360CFB /* DXServiceIntent.m */; };
 		AD978539163E6D7600360CFB /* DXServiceIntentProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = AD978538163E6D7600360CFB /* DXServiceIntentProxy.m */; };
+		ADCD9E37164E85740043C644 /* DXServiceIntentProviderMapping.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCD9E36164E85740043C644 /* DXServiceIntentProviderMapping.m */; };
+		ADCD9E3A164E86440043C644 /* DXServiceIntentProviderMappingSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCD9E39164E86440043C644 /* DXServiceIntentProviderMappingSpec.m */; };
 		ADD1471E163D9388009DF157 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADD1471D163D9388009DF157 /* Foundation.framework */; };
 		ADD14723163D9388009DF157 /* DXService.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ADD14722163D9388009DF157 /* DXService.h */; };
 		ADD14725163D9388009DF157 /* DXService.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD14724163D9388009DF157 /* DXService.m */; };
@@ -67,7 +69,7 @@
 		1D6A3E9770D101B6BB7516BC /* AsyncTaskIntent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncTaskIntent.m; sourceTree = "<group>"; };
 		1D6A3EB8E80796A04CA242B7 /* Readme */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Readme; sourceTree = "<group>"; };
 		3BBD4F55AD5840EC8A2C3C04 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
-		5AE4CB1EBE344CE8BA844E95 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libPods.a; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AE4CB1EBE344CE8BA844E95 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD2954211640602100CFA635 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		AD29545A1640639600CFA635 /* DXServiceProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXServiceProvider.h; sourceTree = "<group>"; };
 		AD77742916407419007883AB /* DXServiceIntentSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXServiceIntentSpec.m; sourceTree = "<group>"; };
@@ -77,12 +79,15 @@
 		AD978534163E6D4800360CFB /* DXServiceIntent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXServiceIntent.m; sourceTree = "<group>"; };
 		AD978537163E6D7600360CFB /* DXServiceIntentProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXServiceIntentProxy.h; sourceTree = "<group>"; };
 		AD978538163E6D7600360CFB /* DXServiceIntentProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXServiceIntentProxy.m; sourceTree = "<group>"; };
-		ADD1471A163D9388009DF157 /* libDXService.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libDXService.a; path = libDXService.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADCD9E35164E85740043C644 /* DXServiceIntentProviderMapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXServiceIntentProviderMapping.h; sourceTree = "<group>"; };
+		ADCD9E36164E85740043C644 /* DXServiceIntentProviderMapping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXServiceIntentProviderMapping.m; sourceTree = "<group>"; };
+		ADCD9E39164E86440043C644 /* DXServiceIntentProviderMappingSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXServiceIntentProviderMappingSpec.m; sourceTree = "<group>"; };
+		ADD1471A163D9388009DF157 /* libDXService.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDXService.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADD1471D163D9388009DF157 /* Foundation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		ADD14721163D9388009DF157 /* DXService-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DXService-Prefix.pch"; sourceTree = "<group>"; };
 		ADD14722163D9388009DF157 /* DXService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DXService.h; sourceTree = "<group>"; };
 		ADD14724163D9388009DF157 /* DXService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DXService.m; sourceTree = "<group>"; };
-		ADD1472B163D9388009DF157 /* DXServiceTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = DXServiceTests.octest; path = DXServiceTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADD1472B163D9388009DF157 /* DXServiceTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DXServiceTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADD1472C163D9388009DF157 /* SenTestingKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		ADD1472E163D9388009DF157 /* UIKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		ADD14736163D9388009DF157 /* DXServiceTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DXServiceTests-Info.plist"; sourceTree = "<group>"; };
@@ -184,6 +189,8 @@
 				ADD14720163D9388009DF157 /* Supporting Files */,
 				1D6A3A9D7501AFFF702F14A9 /* DXServiceIntentProxyCallbackContext.m */,
 				1D6A38C19710123B994C10DD /* DXServiceIntentProxyCallbackContext.h */,
+				ADCD9E35164E85740043C644 /* DXServiceIntentProviderMapping.h */,
+				ADCD9E36164E85740043C644 /* DXServiceIntentProviderMapping.m */,
 			);
 			path = DXService;
 			sourceTree = "<group>";
@@ -205,6 +212,7 @@
 				AD77742C16407846007883AB /* DXServiceIntentProxySpec.m */,
 				1D6A358D12BABA91609F8DF7 /* ExampleClasses */,
 				1D6A3EF602627B2CC9CC1E32 /* ExampleServiceSpecs */,
+				ADCD9E39164E86440043C644 /* DXServiceIntentProviderMappingSpec.m */,
 			);
 			path = DXServiceTests;
 			sourceTree = "<group>";
@@ -350,6 +358,7 @@
 				AD978535163E6D4800360CFB /* DXServiceIntent.m in Sources */,
 				AD978539163E6D7600360CFB /* DXServiceIntentProxy.m in Sources */,
 				1D6A3FD52D02DB5E718B5CE9 /* DXServiceIntentProxyCallbackContext.m in Sources */,
+				ADCD9E37164E85740043C644 /* DXServiceIntentProviderMapping.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,6 +373,7 @@
 				1D6A3CE647849AC7769C6896 /* AsyncTaskIntent.m in Sources */,
 				1D6A30CBA1719CB8D4BE6351 /* AsyncTaskServiceProvider.m in Sources */,
 				1D6A3AEA975AE964C82E0945 /* AsyncServiceSpec.m in Sources */,
+				ADCD9E3A164E86440043C644 /* DXServiceIntentProviderMappingSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
