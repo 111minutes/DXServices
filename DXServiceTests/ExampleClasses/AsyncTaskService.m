@@ -16,11 +16,6 @@
 
 }
 
-- (id <DXServiceProvider>)serviceProviderForIntentClass:(Class)IntentClass
-{
-    return [AsyncTaskServiceProvider new];
-}
-
 - (DXServiceIntentProxy *)createAsyncTaskWithBlock:(id(^)())block
 {
     return [super buildProxyForIntentClass:[AsyncTaskIntent class] constructor:^(AsyncTaskIntent *intent) {
