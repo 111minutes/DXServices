@@ -115,6 +115,15 @@ SPEC_BEGIN(DXServiceIntentSpec)
 
                     [_intent finishWithResult:results];
                 });
+                
+                it(@"Should send DXServiceIntentConstants.finishWithErrorEvent notification with results for finishWithError method call", ^{
+                    NSString *results = @"results";
+                    
+                    [[[_proxy should] receive] absorbEventWithName:DXServiceIntentConstants.finishWithErrorEvent value:results];
+                    [_intent addProxy:_proxy];
+                    
+                    [_intent finishWithError:(NSError*)results];
+                });
 
                 it(@"Should send DXServiceIntentConstants.commitResultsEvent with results notification for commitWithResults: method call", ^{
                     NSString *results = @"results";

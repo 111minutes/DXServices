@@ -55,6 +55,11 @@ const struct DXServiceIntentConstants DXServiceIntentConstants = {
     [self emitEventWithName:DXServiceIntentConstants.finishEvent value:result];
 }
 
+- (void)finishWithError:(NSError*)error
+{
+    [self emitEventWithName:DXServiceIntentConstants.finishWithErrorEvent value:error];
+}
+
 - (void)commitResults:(id)results
 {
     [self emitEventWithName:DXServiceIntentConstants.commitResultsEvent value:results];

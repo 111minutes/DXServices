@@ -30,6 +30,7 @@ extern const struct DXServiceIntentConstants
 - (void)commitResults:(id)results;
 
 - (void)finishWithResult:(id)result;
+- (void)finishWithError:(NSError*)error;
 
 - (void)finish;
 
